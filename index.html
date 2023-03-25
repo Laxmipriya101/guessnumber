@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <title>guess</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="header">
+      <div class="position">
+        <div>
+          <button id="check">Play Again</button>
+        </div>
+        <div>
+          <p class="para">(Between 1 and 100)</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="head">Guess My number!</h1>
+    <div class="number">?</div>
+    <hr />
+
+    <main>
+      <section>
+        <input
+          type="text"
+          class="border"
+          id="name"
+          placeholder=" Number"
+        />
+        <br />
+        </br>
+      
+        <button id="guess" onClick="mainckeck()">check!</button>
+      </section>
+      <section>
+        <p class="message" id="sc">Start guessing...</p>
+        <p class="label">
+          💯 Chances:
+          <span class="score">100</span>
+        </p>
+        <p class="high">
+          🥇 HighScore:
+          <span class="score">0</span>
+        </p>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
